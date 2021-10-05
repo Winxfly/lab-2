@@ -13,14 +13,14 @@ public class Main {
                 "чередование наименьшего и наибольшего, с повышением" +
                 "в центре, с понижением в центре\n");
 
-        Scanner console = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         System.out.println("\nМаксимальный размер ввода: 2 147 483 647\n");
         System.out.print("Введите минимальное положительное" +
                 " значение диапазона: ");
         int min = 0;
         try {
-            min = console.nextInt();
+            min = scanner.nextInt();
         } catch (Exception e) {
             System.out.println("Неверный ввод!");
         }
@@ -29,7 +29,7 @@ public class Main {
                 " значение диапазона: ");
         int max = 0;
         try {
-            max = console.nextInt();
+            max = scanner.nextInt();
         } catch (Exception e) {
             System.out.println("\nНеверный ввод!");
         }
@@ -37,7 +37,7 @@ public class Main {
         System.out.print("Введите количество итераций: ");
         int iter = 0;
         try {
-            iter = console.nextInt();
+            iter = scanner.nextInt();
         } catch (Exception e) {
             System.out.println("\nНеверный ввод!\nЗавершение программы");
         }
