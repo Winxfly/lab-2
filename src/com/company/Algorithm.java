@@ -9,13 +9,13 @@ public class Algorithm {
         System.out.println("\nРезультат анализа:");
         System.out.println("Исходное число:" + data);
         System.out.println("Обратный вид:" + sorting.revers(data));
-        System.out.println("По возрастанию:" + sorting.toMoreSort(data));
-        System.out.println("По убыванию:" + sorting.toLessSort(data));
+        System.out.println("По возрастанию:" + sorting.toMore(data));
+        System.out.println("По убыванию:" + sorting.toLess(data));
         System.out.println("Чередование наименьшего и наибольшего:" +
-                sorting.alternationSort(data));
+                sorting.alternate(data));
         System.out.println("С повышением в центре:" +
-                sorting.centerUpSort(data));
+                sorting.centerUp(data));
         System.out.println("С понижением в центре:" +
-                sorting.centerDownSort(data));
+                sorting.centerDown(data));
     }
 }

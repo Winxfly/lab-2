@@ -25,7 +25,7 @@ public class Sorting {
     }
 
     //сортировка по возрастанию
-    public String toMoreSort(int data) {
+    public String toMore(int data) {
         int[] copyArr = Arrays.copyOf(intToArray(data),
                 intToArray(data).length);
         String sortArr = "";
@@ -45,7 +45,7 @@ public class Sorting {
     }
 
     //сортировка по убыванию
-    public String toLessSort(int data) {
+    public String toLess(int data) {
         int[] copyArr = Arrays.copyOf(intToArray(data),
                 intToArray(data).length);
         String sortArr = "";
@@ -65,8 +65,8 @@ public class Sorting {
     }
 
     //чередовние наименьшего и наибольшего
-    public String alternationSort(int data) {
-        String copyLess = toLessSort(data);
+    public String alternate(int data) {
+        String copyLess = toLess(data);
         String sortArr = "";
 
         int a = copyLess.length() - 1;
@@ -86,7 +86,7 @@ public class Sorting {
     }
 
     //нечетное кол-во цифр с повышением в центре
-    public String centerUpSort(int data) {
+    public String centerUp(int data) {
         int[] copyArr = Arrays.copyOf(intToArray(data),
                 intToArray(data).length);
 
@@ -119,7 +119,7 @@ public class Sorting {
     }
 
     //нечетное кол-во цифр с понижением в центре
-    public String centerDownSort(int data) {
+    public String centerDown(int data) {
         int[] copyArr = Arrays.copyOf(intToArray(data),
                 intToArray(data).length);
 
